@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+ a{
+    font-family: 'Josefin Sans',
+    sans-serif !important;
+}
+*{
+    margin:0px !important;
+    /* padding:0px !important; */
+    box-sizing:border-box !important;
+}
+
+#header{
+    background:linear-gradient(#015cd48a,#015cd4a2), url(images/bground123@2x.png);
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    height:100vh;
+    width:100%;
+    position: relative;
+    /* clip-path: polygon(0 0, 100% 0, 100% 83%, 50% 98%, 0 83%); */
+    
+}
+#user_img_box {
+    
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    /* background:red; */
+}
+#header_img{
+    width:270px;
+    border-radius:50%;
+    border:5px solid rgba(221, 221, 221, 0.575);
+    padding:20px !important;
+}
+#user_img_box h1,
+#user_img_box{
+    color:rgb(125, 132, 136);
+    font-family:arial black;
+}
+#scroll_btn{
+    border:2px white solid;
+    height:60px;
+    width:25px;
+    border-radius:50px;
+    padding:3px !important; 
+    margin:50px auto !important;
+
+
+    
+
+}
+#scroll_bar {
+    width:2px;
+    height:10px;
+    background:white;
+    margin:auto !important;
+    vertical-align:middle !important;
+    /* border-radius:40%; */
+    animation:top-down-mover 1s infinite alternate;
+    
+
+}
+@keyframes top-down-mover{
+    to{transform:translateY( 4px)}
+    from{transform:translateY( 35px)}
+}
+.fab {
+    font-size:20px !important;
+}
+/* #nav-links{
+    margin:auto!important;
+    
+} */
+#nav-cntn:hover, #nav-cntn:focus{
+    background:tomato;
+    color:white;
+}
+#header-navbar{
+position: sticky;
+top:0px;
+}
+
+#custom-nav{                          
+    width:19% !important;
+    text-align:center !important;
+}
+#custom-nav:hover{
+    background:#48cae4 !important;
+    color:white !important;
+    font-weight:bolder;
+}
+#nav_links {
+    font-size:20px !important;
+    color:#151D28 !important;
+    font-weight:bolder;
+    height:59px;
+    line-height:46px;
+    
+}
+.navbar-toggler{
+    background: #ddddddab !important;
+    outline:none !important;
+
+}
+.navbar-toggler:active{
+    border:none !important;
+}
+@media screen and (max-width:767px){
+    #custom-nav{
+        width:100% !important;
+        margin:10px 5px !important;
+    }
+    #ball-1{
+       transform:translateX(-20%)
+    }
+    #custom-navbar{
+        background:#F8F9FA;
+        transition: 2s;
+    } 
+    #who_i_am_section_photo {
+        height:200px !important;
+    }
+   
+}
+#Nav_area{
+    position:sticky;
+    top:0px;
+    z-index:100;
+    padding:0px !important;
+    border-bottom:1px solid #ddd;
+}
+#who_i_am_section_photo{
+
+}
+#about_me_row{
+    margin-top:5rem !important;
+}
+/*--------resume-------*/
+.resume{
+    background:#F2F5FF;
+    position: relative;
+    margin-top:-50px;
+}
+#ball-1{
+    width:400px;
+    height:500px;
+    background:#F2D0A4;
+    position: absolute;
+    clip-path: circle(28.9% at 0 49%);
+    top:20%;
+
+    transform:translateX(-20%)
+}
+#ball-2 {
+    width: 400px;
+    height: 500px;
+    background: #FF70FF;
+    position: absolute;
+    clip-path: ellipse(11% 33% at 100% 51%);
+    top: 9%;
+     right:-80px;
+     overflow-x: hidden;
+    transform: translateX(-20%)
+}
+.timeline{
+    list-style:none;
+    position: relative;
+
+}
+ul.timeline:before{
+    content:'';
+    background:#555;
+    width:4px;
+    height:100%;
+    display:inline-block;
+    position: absolute;
+    left:20px;
+    z-index:1;
+}
+ul.timeline li h4{
+    background:#555;
+    padding:8px ;
+    padding-left:20px;
+    color:white;
+    font-size:19px;
+}
+ul.timeline li{
+    background:#f9fbff;
+    padding:5px;
+}
+ul.timeline li::before{
+    content:'\f111';
+    font-family: 'font awesome 5 free';
+    font-weight:bolder;
+    position:absolute;
+    z-index:2;
+    color:black;
+    left:7px;
+    margin-top:3px;
+    border:4px solid black;
+    padding:2px;
+    border-radius:50%;
+    line-height:17px;
+}
+
+
+/* -----------------Services---------------- */
+.title.text-center p{
+    margin:auto !important;
+    margin-bottom:15px !important;
+}
+#services-box{
+    border-top-right-radius: 60px;
+    padding:20px;
+    padding-top:10px;
+    margin-top:20px;
+    border-bottom-left-radius: 60px;
+    border:2px solid #ddd;
+    box-shadow: 1px 1px 5px black;
+
+}
+#services-box:hover{
+    border-radius:0px;
+    background:rgba(0, 0, 0, 0.61);
+    color:white;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+     transition: 0.6s;
+}
+/*------------------contact me*/
+#contact_me {
+    background:linear-gradient(60deg, #0000007c, #0000007c), url(images/business-card-laptop-copy-space.jpg);
+    background-position:center;
+    background-size:cover;
+    color:white !important;
+    background-attachment:fixed;
+}
+#btn_hover:hover{
+    background:#000000ab;
+    transform: scale(1.05);
+    transition:transform 0.5s;
+    border-radius:10px;
+}
+/* socil icon star form here */
+#social_icons {
+    position:sticky;
+    top:50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    width:20px;
+}
+a.pr-1.pl-2.text-white.nav-link:hover {
+    width: 64px;
+    color: #ff5c00 !important;
+    padding-left: 30px !important;
+}
+
+section#who_i_am {
+    margin-bottom: -100px !important;
+}
